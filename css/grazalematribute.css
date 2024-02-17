@@ -1,0 +1,37 @@
+/****************************************************************/
+/**/
+/**/
+/****************************************************************/
+
+/*Fonts*/
+@font-face{ src:url(../font/CursiveSans-Bold.ttf);
+  font-family:titulos;
+}
+@font-face{src:url(../font/InriaSerif-Regular.otf);
+  font-family:texto;
+}
+
+.font-texto{
+  font-family: texto;
+  font-size: 1.2em;
+}
+.font-titulos{
+  font-family: titulos;
+}
+
+/*Sizing*/
+
+/*Colors*/
+.bg-darkgreen{background-color:#212520 ;}
+.text-darkgreen{color: #212520;}
+.bg-ligthgreen{background-color: #8b895f;}
+.bg-dark{background-color: #1C1818;}
+/*img*/
+
+
+/*Hero*/
+#hero {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
