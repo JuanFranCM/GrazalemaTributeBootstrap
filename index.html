@@ -15,6 +15,7 @@
 
 <body class="bg-darkgreen text-light">
 
+    <!--Navegador-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Inicio</a>
@@ -40,6 +41,7 @@
         </div>
     </nav>
 
+    <!--Hero section-->
     <header id="hero" class="vh-100 container d-flex justify-content-center align-items-end">
         <section id="herotext">¿Quieres explorar las rutas?</section>
         <a href="#rutas"><button class="btn btn-light mb-8 ">Saber más</button></a>
@@ -48,7 +50,7 @@
     <div class="container">
         
         <!--Introducción-->
-        <section id="intro" class="p-5">
+        <section id="intro" class="p-5 bg-ligthgreen mt-3 rounded-3">
             <h1 class="display-2 text-center text-danger fw-bold mb-5">Introduction</h1>
             <div class="container">
                 <div class="row g-5">
@@ -161,6 +163,7 @@
         <!--Gallery from bootstrap-->
 
         <section id="gallery">
+            <h1 class="display-2 text-center fw-bold text-danger mb-5 ">Galería</h1>
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -347,16 +350,16 @@
             <h1 class="display-2 text-center text-danger fw-bold mb-5">Bandoleros</h1>
             <div class="container">
                 
-                <div class="row g-5">
+                <div class="row g-5 mb-4 pb-4">
                     
 
                     <div class="col-12 col-md-6">
                         <p class="d-inline-flex gap-1 ">
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
                                 ¿Qué es?
                             </a>
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapse1">
                             <div class="card card-body text-black">
                                 "Los bandoleros" son una representación teatral anual sobre algunos sucesos que tuvieron lugar en la Sierra y alrededores sobre la vida de El Tempranillo.
                             </div>
@@ -370,18 +373,18 @@
                 </div>
 
 
-                <div class="row g-5">
+                <div class="row g-5 mb-4 pb-4">
                     <div class="col-12 col-md-6">
                         <img src="./img/bandoleros/bandteatro.jpg" alt="Teatro al aire exterior" class="w-100">
                     </div>
 
                     <div class="col-12 col-md-6">
                         <p class="d-inline-flex gap-1 ">
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                                 ¿Dónde?
                             </a>
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapse2">
                             <div class="card card-body text-black">
                                 A lo largo del fin de semana, se caracteriza el pueblo a la época y se realiza una obra de teatro en actos en los diferentes escenarios.
                             </div>
@@ -391,14 +394,14 @@
                 </div>
 
 
-                <div class="row g-5">
+                <div class="row g-5 mb-4 pb-4">
                     <div class="col-12 col-md-6">
                         <p class="d-inline-flex gap-1 ">
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                                 ¿Qué más hacer?
                             </a>
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapse3">
                             <div class="card card-body text-black">
                                 También podrás encontrar multitud de puestos con comida de la época como migas, revueltos, paella... Y también de bebida como vino dulce y pacharán.
                             </div>
@@ -413,7 +416,7 @@
 
                 
 
-                <div class="row g-5">
+                <div class="row g-5 mb-4 pb-4">
                     
                     <div class="col-12 col-md-6">
                         <img src="./img/bandoleros/bandtumbas.jpg" alt="Teatro al aire exterior" class="w-100">
@@ -421,11 +424,11 @@
 
                     <div class="col-12 col-md-6">
                         <p class="d-inline-flex gap-1 ">
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
                                 Además
                             </a>
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapse4">
                             <div class="card card-body text-black">
                                 Aún con final trágico, podrás disfrutar de la multitud de actos y de varios cantos flamencos que realizan a lo largo de la obra.
                             </div>
@@ -437,28 +440,196 @@
 
         </section>
 
-       
+
     </div>
 
 
 
 
+
+
     <!--footer with grid in 3 irregular columns-->
-    <footer class="p-3 bg-secondary ">
+    <footer class="p-3 bg-footer ">
         <!--grid container-->
         <div class="container">
             <div class="row g-5">
 
                 <div class="col-6 col-md-3">
+                    <h3>Sígueme en GitHub:</h3>
+                    <a href="https://github.com/JuanFranCM" target="_blank" class="githubbutton text-light fw-bold text-decoration-none">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+                        </svg>
+                        <p class="textgithub">Click me</p>
+
+                    </a>
+                    
+                    <h3>Portal turismo</h3>
+                    <a href="https://www.grazalema.es/" target="blank" class="fw-bold text-decoration-none text-light" ><p>Página online</p></a>
+
+
+                    <!-- Button trigger modal credits -->
+                    <button type="button" class="btn btn-black bg-darkgreen text-light" data-bs-toggle="modal" data-bs-target="#Modal">
+                        Créditos
+                    </button>
+                    
+                    <!-- Modal credits-->
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-darkgreen">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ModalLabel">Créditos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>Favicon:</h1>
+                                <a href="https://www.iconsdb.com/green-icons/mountain-icon.html" target="_blank">
+                                    <p2>IconSDB: Green mountain icon</p2>
+                                </a>
+                                <h1>Images</h1>
+                                <p2>All rights reserved. No part of this publication can be used without the prior permission of the publisher.</p2>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Button trigger modal credits -->
+                    <button type="button" class="btn btn-black bg-darkgreen text-light" data-bs-toggle="modal" data-bs-target="#ModalContacto">
+                        Contacto
+                    </button>
+                    
+                    <!-- Modal credits-->
+                    <div class="modal fade" id="ModalContacto" tabindex="-1" aria-labelledby="ModalLabelContacto" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content bg-darkgreen">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ModalLabelContacto">Contacto</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <section id="contact">
+                                    <div class="container">
+                                      <div class="row">
+                                        
+                                        <div class="col p-5">
+                                          
+                                          
+                                          <form action="" method="post" class="border border-secondary p-5 rounded-3">
+                                            <h1>Contacto: </h1>
+                                            <div class="mb-3">
+                                              <label for="nombre" class="form-label">Nombre: </label>
+                                              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+                                              <div id="nombreHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="apellidos" class="form-label">Apellidos: </label>
+                                              <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
+                                              <div id="apellidosHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                            </div>
+                          
+                                            <div class="mb-3">
+                                              <label for="email" class="form-label">Apellidos: </label>
+                                              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                            </div>
+                          
+                                            <div class="mb-3">
+                                              <label for="provincia" class="form-label">Provincia</label>
+                                              <select class="form-select" id="provincia" name="provincia" aria-label="Default select example">
+                                                <option value="0">-- elige provincia</option>
+                                                <option value="29">Málaga</option>
+                                                <option value="18">Granada</option>
+                                                <option value="4">Almería</option>
+                                              </select>
+                                            </div>
+                          
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="radio" value="masculino" id="masculino" name="sexo">
+                                              <label class="form-check-label" for="masculino">
+                                                Masculino
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="sexo" value="femenino" id="femenino">
+                                              <label class="form-check-label" for="femenino">
+                                                Femenino
+                                              </label>
+                                            </div>
+                          
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="sexo" value="otro" id="otro">
+                                              <label class="form-check-label" for="otro">
+                                                Otro
+                                              </label>
+                                            </div>
+                          
+                                            <div class="my-5 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1"><a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-primary fw-bold text-decoration-none ">Acepto los términos y condiciones</a></label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                          
+                                          <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perspiciatis corporis labore, voluptates cum non illum exercitationem ab velit. Quisquam dicta quia cupiditate perspiciatis. Distinctio omnis voluptates natus ipsa quae.
+                                                    Eum, sapiente. Doloremque temporibus ea cumque dicta aut tenetur, maiores eaque, quae corporis fugiat est dolores debitis asperiores quos doloribus qui, iure ipsum dolor deserunt? Consequuntur aliquid odit quod rem.
+                                                    Commodi deleniti vero eum illum esse, maxime inventore fugit expedita corporis sed aliquid rerum harum veritatis nulla voluptatem sapiente nostrum nisi, ut culpa laborum. Saepe, laudantium? Voluptates similique veniam rerum?
+                                                    Minus rem odit aspernatur impedit dignissimos! Perspiciatis nam, provident ad molestias corrupti iure enim architecto a nesciunt deleniti iste reprehenderit sunt iusto praesentium incidunt possimus dolore tempora ipsum, cumque repellat.
+                                                    Nihil nam saepe commodi itaque eveniet laborum totam consequuntur sequi sint. Nisi placeat, quaerat, facilis illo quasi vitae delectus pariatur voluptatibus molestiae rerum vero, quis eveniet repellat dignissimos mollitia explicabo?
+                                                    Doloribus ipsa sit culpa officia ipsum ducimus possimus aliquam tempora saepe quis quae obcaecati, quos delectus ut aspernatur animi! Saepe quae magnam nihil esse cupiditate nesciunt repellendus optio repudiandae cumque.
+                                                    Nihil ab ut non temporibus quae modi consequuntur dignissimos repellat harum odit. Cum dolores tenetur ex, enim ipsam fugiat, itaque nihil doloremque, voluptatum architecto delectus totam distinctio quia. Repudiandae, impedit!
+                                                    Quam minima, suscipit qui fuga est eaque unde earum illum ipsum necessitatibus. Dolores accusamus voluptatem quasi ea. Voluptatem, saepe expedita libero voluptate a error, culpa aperiam ullam iusto labore dicta!
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Understood</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                          
+                                        </div>
+                                      </div>
+                                    </div>
+                          
+                                </section>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     
                 </div>
 
-                <div class="col-6 col-md-3">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consectetur itaque velit possimus officia distinctio quisquam. Minima, quas voluptates iusto blanditiis, minus quidem dolorem velit, vero reiciendis cumque tempore perspiciatis.
+                <div class="col-6 col-md-3 ">
+                    <a href="#" class="fw-bold text-decoration-none text-light" id="linkfooter"><p>Inicio</p></a>
+                    <a href="#intro" class="fw-bold text-decoration-none text-light" id="linkfooter"><p>Introducción</p></a>
+                    <a href="#rutas" class="fw-bold text-decoration-none text-light" id="linkfooter"><p>Rutas</p></a>
+                    <a href="#explora" class="fw-bold text-decoration-none text-light" id="linkfooter"><p>Explora el lugar</p></a>
+                    <a href="#bandoleros" class="fw-bold text-decoration-none text-light" id="linkfooter"><p>Bandoleros</p></a>
                 </div>
 
                 <div class="col-12 col-md-6">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est provident quibusdam beatae sapiente itaque aut deleniti, dignissimos quos nisi assumenda tenetur minima officia reprehenderit nam, ad soluta totam exercitationem.
+                    <!--google maps-->
+                    <div class="container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.4623993848186!2d-5.370657073665833!3d36.75947321999354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d3e6dde717be7%3A0xe2d4f5de40e13081!2s11610%20Grazalema%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701870036269!5m2!1ses!2ses" class="responsive-iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </div>
                 </div>
 
             </div>
@@ -466,61 +637,7 @@
         
 
     </footer>
-    <footer>
-        <div class="grid-3footer">
-            <div class="col-4">
-                <h3>Sígueme en GitHub:</h3>
-                <a href="https://github.com/JuanFranCM" target="_blank">
-                    <button class="githubbutton">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
-                        </svg>
-                        <p class="textgithub">Click me</p>
-                    </button>
-                </a>
-                
-                <h3>Portal de turismo oficial</h3>
-                <a href="https://www.grazalema.es/" target="blank"><p>Página online</p></a>
-                
-                <!-- Trigger/Open The Modal -->
-                <h3 id="myBtn">Créditos</h3>
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h1>Favicon:</h1>
-                        <a href="https://www.iconsdb.com/green-icons/mountain-icon.html" target="_blank">
-                            <p2>IconSDB: Green mountain icon</p2>
-                        </a>
-                        <h1>Images</h1>
-                        <p2>All rights reserved. No part of this publication can be used without the prior permission of the publisher.</p2>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="col-4">
-                <a href="#"><p>Inicio</p></a>
-                <a href="#intro"><p>Introducción</p></a>
-                <a href="#rutas"><p>Rutas</p></a>
-                <a href="#explora"><p>Explora el lugar</p></a>
-                <a href="#bandoleros"><p>Bandoleros</p></a>
-                
-                
-            </div>
-            <div class="col-2">
-                <!--google maps-->
-                <div class="container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.4623993848186!2d-5.370657073665833!3d36.75947321999354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d3e6dde717be7%3A0xe2d4f5de40e13081!2s11610%20Grazalema%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1701870036269!5m2!1ses!2ses" class="responsive-iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="./js/grazalematribute.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

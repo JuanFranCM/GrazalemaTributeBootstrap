@@ -22,10 +22,11 @@
 /*Sizing*/
 
 /*Colors*/
-.bg-darkgreen{background-color:#212520 ;}
+.bg-darkgreen{background-color:#212520 !important;}
 .text-darkgreen{color: #212520;}
-.bg-ligthgreen{background-color: #8b895f;}
-.bg-dark{background-color: #1C1818;}
+.bg-ligthgreen{background-color: #8b895f !important;}
+.bg-dark{background-color: #1C1818 !important;}
+.bg-footer{background-color: #C7C495 !important;}
 /*img*/
 
 
@@ -34,4 +35,35 @@
   background-image: url('../img/hero.jpg');
   background-size: cover;
   background-position: center;
+}
+
+/*Github button*/
+.githubbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+/*Footer hover*/
+footer a p{
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border: hidden;
+  padding-left: 10px;
+  transition: 1s;
+}
+
+footer a p:hover {
+  color: black;
+  border-left: 3px solid black;
+
 }
