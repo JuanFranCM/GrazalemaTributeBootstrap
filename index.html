@@ -481,7 +481,7 @@
                             <h1 class="modal-title fs-5" id="ModalLabel">Créditos</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body font-texto">
                                 <h1>Favicon:</h1>
                                 <a href="https://www.iconsdb.com/green-icons/mountain-icon.html" target="_blank">
                                     <p2>IconSDB: Green mountain icon</p2>
@@ -518,60 +518,70 @@
                                         <div class="col p-5">
                                           
                                           
-                                          <form action="" method="post" class="border border-secondary p-5 rounded-3">
-                                            <h1>Contacto: </h1>
                                             <div class="mb-3">
-                                              <label for="nombre" class="form-label">Nombre: </label>
-                                              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
-                                              <div id="nombreHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                              <label for="nombre" class="form-label">Nombre:<span class="text-danger">*</span> </label>
+                                              <input onchange="resetear('nombre')" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+                                              <div id="nombreHelp" class="form-text text-danger">Nombre obligatorio</div>
                                             </div>
+                                        
                                             <div class="mb-3">
-                                              <label for="apellidos" class="form-label">Apellidos: </label>
-                                              <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
-                                              <div id="apellidosHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                              <label for="apellidos" class="form-label">Apellidos: <span class="text-danger">*</span></label>
+                                              <input onchange="resetear('apellidos')" type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
+                                              <div id="apellidosHelp" class="form-text text-danger">Apellidos obligatorio</div>
+                                            </div>
+                                        
+                                            <div class="mb-3">
+                                              <label for="email" class="form-label">Email: </label>
+                                              <input onchange="resetear('email')" type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                              <div id="emailHelp" class="form-text text-danger">Formato de correo erróneo</div>
                                             </div>
                           
                                             <div class="mb-3">
-                                              <label for="email" class="form-label">Apellidos: </label>
-                                              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                            </div>
-                          
-                                            <div class="mb-3">
-                                              <label for="provincia" class="form-label">Provincia</label>
-                                              <select class="form-select" id="provincia" name="provincia" aria-label="Default select example">
+                                              <label for="provincia" class="form-label">Provincia: </label>
+                                              <select onchange="resetear('provincia')" class="form-select" aria-label="Default select example"
+                                                id="provincia" name="provincia">
                                                 <option value="0">-- elige provincia</option>
                                                 <option value="29">Málaga</option>
                                                 <option value="18">Granada</option>
                                                 <option value="4">Almería</option>
                                               </select>
+                                              <div id="provinciaHelp" class="form-text text-danger">Seleccione provincia</div>
                                             </div>
                           
                                             <div class="form-check">
-                                              <input class="form-check-input" type="radio" value="masculino" id="masculino" name="sexo">
+                                              <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
                                               <label class="form-check-label" for="masculino">
                                                 Masculino
                                               </label>
                                             </div>
+                                
                                             <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="sexo" value="femenino" id="femenino">
+                                              <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
                                               <label class="form-check-label" for="femenino">
                                                 Femenino
                                               </label>
                                             </div>
-                          
+                                        
                                             <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="sexo" value="otro" id="otro">
+                                              <input class="form-check-input" checked type="radio" name="sexo" id="otro" value="otro">
                                               <label class="form-check-label" for="otro">
-                                                Otro
+                                                No quiero indicarlo
                                               </label>
                                             </div>
+                                            <div id="nombreHelp" class="form-text text-danger">Elija sexo</div>
                           
                                             <div class="my-5 form-check">
-                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                              <label class="form-check-label" for="exampleCheck1"><a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-primary fw-bold text-decoration-none ">Acepto los términos y condiciones</a></label>
-                                            </div>
+                                              <input type="checkbox" onchange="resetear('terminos')" class="form-check-input" id="terminos">
+                                              <label class="form-check-label" for="terminos">
+                                                <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                  class="text-primary fw-bold text-decoration-none">
+                                                  Acepto los términos y condiciones
+                                                </a>
+                                              </label>
+                                              <div id="terminosHelp" class="form-text text-danger">Debe aceptar</div>
+                                              </div>
                                             <button type="submit" class="btn btn-primary">Submit</button>
+
                                           </form>
                           
                                           <!-- Modal -->
@@ -583,14 +593,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                   </div>
                                                   <div class="modal-body">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perspiciatis corporis labore, voluptates cum non illum exercitationem ab velit. Quisquam dicta quia cupiditate perspiciatis. Distinctio omnis voluptates natus ipsa quae.
-                                                    Eum, sapiente. Doloremque temporibus ea cumque dicta aut tenetur, maiores eaque, quae corporis fugiat est dolores debitis asperiores quos doloribus qui, iure ipsum dolor deserunt? Consequuntur aliquid odit quod rem.
-                                                    Commodi deleniti vero eum illum esse, maxime inventore fugit expedita corporis sed aliquid rerum harum veritatis nulla voluptatem sapiente nostrum nisi, ut culpa laborum. Saepe, laudantium? Voluptates similique veniam rerum?
-                                                    Minus rem odit aspernatur impedit dignissimos! Perspiciatis nam, provident ad molestias corrupti iure enim architecto a nesciunt deleniti iste reprehenderit sunt iusto praesentium incidunt possimus dolore tempora ipsum, cumque repellat.
-                                                    Nihil nam saepe commodi itaque eveniet laborum totam consequuntur sequi sint. Nisi placeat, quaerat, facilis illo quasi vitae delectus pariatur voluptatibus molestiae rerum vero, quis eveniet repellat dignissimos mollitia explicabo?
-                                                    Doloribus ipsa sit culpa officia ipsum ducimus possimus aliquam tempora saepe quis quae obcaecati, quos delectus ut aspernatur animi! Saepe quae magnam nihil esse cupiditate nesciunt repellendus optio repudiandae cumque.
-                                                    Nihil ab ut non temporibus quae modi consequuntur dignissimos repellat harum odit. Cum dolores tenetur ex, enim ipsam fugiat, itaque nihil doloremque, voluptatum architecto delectus totam distinctio quia. Repudiandae, impedit!
-                                                    Quam minima, suscipit qui fuga est eaque unde earum illum ipsum necessitatibus. Dolores accusamus voluptatem quasi ea. Voluptatem, saepe expedita libero voluptate a error, culpa aperiam ullam iusto labore dicta!
+                                                    Términos
                                                   </div>
                                                   <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
